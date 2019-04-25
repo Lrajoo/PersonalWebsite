@@ -1,0 +1,41 @@
+
+/* big tablets */
+@media only screen and (max-width: 1200 px) {
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* small tablets to big tablets: from 768 to 1023 px */
+@media only screen and (max-width: 1023 px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    
+    .name {
+        padding: 0px 5px;
+    }
+    
+    .dev-links-header li:first-child{
+        margin-left: 40%;
+    }
+}
+
+/* small phones to small tablets: from 481 to 767 px */
+@media only screen and (max-width: 767 px) {
+    .name {
+        padding: 0px 5px;
+    }
+    .dev-links-header li:first-child{
+        margin-left: 10%;
+    }
+}
+
+/* small phones: from 0 to 480 px */
+@media only screen and (max-width: 480 px) {
+      .name {
+        padding: 0px 5px;
+    }
+    .dev-links-header li:first-child{
+        margin-left: 20%;
+    }
+}

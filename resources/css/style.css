@@ -1,0 +1,371 @@
+/* ------------------------------------------------------ */
+/* Basic Setup */
+/* ------------------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/* ------------------------------------------------------ */
+/* Reusable Content */
+/* ------------------------------------------------------ */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 80px 0;
+}
+.box {
+    padding: 1%;
+}
+/* ------------------------------------------------------ */
+/* Header */
+/* ------------------------------------------------------ */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/buildings.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.profile-picture {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+hr{
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+}
+.top-line {
+    width: 30%;
+    top: 64%;
+}
+.bottom-line {
+    width: 20%;
+    top: 75%;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: 40px 0 0 0;
+    
+}
+.main-nav li {
+    display: inline-block;
+    margin: 0 0 0 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+    padding: 8px 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size 70%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid rgb(255, 255, 255);  
+}
+.icon-white {
+    color: rgb(255, 255, 255);
+}
+.dev-links-header {
+    list-style: none;
+}   
+.dev-links-header li {
+    display: inline-block;
+    align-content: center;
+    font-size: 250%;
+    vertical-align: middle;
+    margin-right: 4%;
+
+}
+.dev-links-header li:first-child{
+    margin-left: 40%;
+}
+/* ------------------------------------------------------ */
+/* Headings */
+/* ------------------------------------------------------ */
+h1, h2, h3, h4, h5 {
+    font-weight: 300;
+}
+h2 {
+    text-align: center;
+    border-bottom: 3px solid rgb(63, 181, 255);
+    padding-bottom: 10px;
+    width: 25%;
+    content: ""; 
+    display: block; 
+    margin: -3% auto 5% auto; 
+}
+.white-font {
+    color: rgb(255,255,255);
+}
+.skills-title {
+    text-align: center;
+    border-bottom: 3px solid rgb(63, 181, 255);
+    padding-bottom: 10px;
+    width: 25%;
+    content: ""; 
+    display: block; 
+    margin: -3% auto 5% auto;
+    color: rgb(255, 255, 255);
+}
+.name{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size; 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    color: rgb(255,255,255);
+}
+.trait{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size; 170%;
+    padding-bottom: 10px;
+    color: rgb(255,255,255);
+}
+.hello{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 10px;
+    color: rgb(255,255,255);
+ }
+/* ------------------------------------------------------ */
+/* Icons */
+/* ------------------------------------------------------ */
+.icon-big {
+    float: left;
+    font-size: 225%;
+    display: inline-block;
+    color: #454545;
+    margin: 0 10% 10% 10%;
+ 
+}
+.code-icon {
+    float: left;
+    font-size: 375%;
+    display: inline-block;
+    line-height: 350%;
+    margin: -3% 10% 20% 10%;
+}
+/* ------------------------------------------------------ */
+/* About */
+/* ------------------------------------------------------ */
+.section-about {
+    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/skyline.jpeg);
+    background-size: cover;
+    background-position: center;
+        height: 100vh;
+    background-attachment: fixed;
+}
+.personal-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 5%;
+    height: 600px;
+}
+.box-title {
+    content: ""; 
+    display: block; 
+    margin: 0 auto 15% auto; 
+    width: 65%;   
+    text-align: center;
+    border-bottom: 3px solid rgb(63, 181, 255);
+    padding: 5% 0 3% 0;
+}
+.blurb {
+    margin: 40px 40px;
+}
+.ion-ios-school, .ion-ios-airplane, .ion-ios-contact, .ion-ios-construct{
+    transition: color 0.5s;
+}
+.ion-ios-school:hover {
+    color:#e3c41e;
+}
+.ion-ios-airplane:hover {
+    color: #e19c41;
+}
+.ion-ios-contact:hover {
+    color: #2e2eb4;
+}
+.ion-ios-construct:hover {
+    color: #800020;
+}
+/* ------------------------------------------------------ */
+/* Skills */
+/* ------------------------------------------------------ */
+.section-skills {
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/laptop.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.skills-box { 
+    border-radius: 15px;
+    margin-left: 5%;
+    height: 450px;
+}
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #454545;
+    border-radius: 30%;
+    display: inline-block;
+}
+.solid-dot {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(255,255,255);
+    border-radius: 30%;
+    display: inline-block;
+}
+.devicon-django-line-wordmark {
+    color: white;
+}
+/* ------------------------------------------------------ */
+/* Experience */
+/* ------------------------------------------------------ */
+.section-experience {
+    background-color: #f4f4f4;
+}
+.projects-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 650px;
+    box-shadow: 0 5px 2px #e3e3e3;
+}
+.project-picture {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.project-picture-2 {
+    height: 350px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.project-picture-3 {
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edit-picture {
+    padding-top: 23px;
+}
+.project-title {
+    text-align: center;
+    padding-top: 2%;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.project-description {
+    margin: 3% 5%;
+    font-size: 90%;
+}
+.projects-box img {
+    opacity: 0.8;
+    transform: scale(1.0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.projects-box img:hover {
+    opacity: 1.0;
+    transform: scale(1.05);
+}
+/* ------------------------------------------------------ */
+/* Contact */
+/* ------------------------------------------------------ */
+.section-contact {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/contactPicture.jpeg);
+    background-size: cover;
+}
+.contact-me {
+    font-weight: 300;
+    font-size: 100%;
+    text-align: center;
+    margin-top: 15%;
+}
+.contact-name {
+    text-align: center;
+    margin-left: 25%;
+    border-bottom: 2px solid #454545;
+    width: 50%;
+    font-weight: 300;
+}
+.dev-links-footer {
+    list-style: none;
+}   
+.dev-links-footer li {
+    display: inline-block;
+    align-content: center;
+    margin-right: 5%;
+    margin-top: -5%;
+    font-size: 250%;
+    vertical-align: middle;
+}
+.dev-links-footer li:first-child{
+    margin-left: 27%;
+}
+.contact-box {
+    height: 300px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.8s;
+}
+.contact-box:hover {
+    background-color: rgba(255, 255, 255,1);
+}
+.icon-grey {
+    color: #454545;
+}
+.copyright {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 75%;
+}
+.ion-logo-github, .ion-ios-mail, .ion-logo-linkedin {
+    transition: color 0.5s;
+}
+.ion-logo-github:hover {
+    color: rgb(0,0,0);
+}
+.ion-ios-mail:hover {
+    color: #D44638;
+}
+.ion-logo-linkedin:hover {
+    color: #0077B5;
+}
